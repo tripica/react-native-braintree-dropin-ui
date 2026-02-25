@@ -65,7 +65,7 @@ public class RNBraintreeDropInModule extends ReactContextBaseJavaModule {
       return;
     }
 
-    DropInRequest dropInRequest = new DropInRequest();
+    DropInRequest dropInRequest = new DropInRequest(false);
 
     if(options.hasKey("vaultManager")) {
       dropInRequest.setVaultManagerEnabled(options.getBoolean("vaultManager"));
